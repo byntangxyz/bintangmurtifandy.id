@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+  --font-pixel: 'Pixelify Sans', monospace;
+  --font-pjs: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+/* Hide native scrollbar */
+html {
+  scrollbar-width: none; 
+}
+
+html::-webkit-scrollbar {
+  display: none; 
+}

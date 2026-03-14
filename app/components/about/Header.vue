@@ -1,0 +1,41 @@
+<template>
+  <div class="relative overflow-hidden">
+    <!-- Decorative bg text — drifts up as page scrolls -->
+    <Motion
+      class="absolute -top-4 -right-4 font-pixel font-bold uppercase leading-none select-none pointer-events-none text-[7rem] md:text-[10rem] text-blue-500/5"
+      :style="{ y: headerBgY }"
+      aria-hidden="true"
+    >
+      ABOUT
+    </Motion>
+
+    <Motion
+      as="div"
+      class="relative flex flex-col gap-3"
+      :initial="{ opacity: 0, y: 24 }"
+      :animate="{ opacity: 1, y: 0 }"
+      :transition="{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }"
+    >
+      <p class="font-pjs text-blue-400 text-sm tracking-widest uppercase">
+        A bit about me
+      </p>
+      <h1
+        class="font-pixel text-4xl md:text-6xl font-bold uppercase leading-tight"
+      >
+        Get To<br /><span class="text-blue-400">Know Me</span>
+      </h1>
+      <p
+        class="font-inter text-base text-white/50 max-w-lg leading-relaxed mt-2"
+      >
+        Fullstack developer, devops, network engineer, and tech enthusiast.
+      </p>
+    </Motion>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { useScroll, useTransform } from 'motion-v';
+
+const { scrollY } = useScroll();
+const headerBgY = useTransform(scrollY, [0, 500], ['0px', '-90px']);
+</script>
