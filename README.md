@@ -25,7 +25,7 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/byntangxyz/portfolio-v6.git](https://github.com/byntangxyz/portfolio-v6.git)
+    git clone https://github.com/byntangxyz/portfolio-v6.git
     ```
 
 2.  **Install dependencies:**
