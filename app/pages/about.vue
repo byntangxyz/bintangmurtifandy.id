@@ -98,7 +98,7 @@
       </Motion>
     </section>
 
-    <section ref="journeyRef" class="relative">
+    <!-- <section ref="journeyRef" class="relative">
       <Motion :style="{ y: journeyY }">
         <div class="flex flex-col gap-10">
           <Motion
@@ -161,9 +161,8 @@
           </div>
         </div>
       </Motion>
-    </section>
+    </section> -->
 
-    <!-- ── Beyond Code ────────────────────────────────────── -->
     <section ref="beyondRef" class="relative">
       <Motion :style="{ y: beyondY }">
         <Motion

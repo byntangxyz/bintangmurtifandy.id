@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="mx-auto flex w-full max-w-5xl flex-col gap-14 px-4 pt-28 pb-24 sm:px-6"
-  >
+  <div class="flex w-full flex-col gap-14 pt-28 pb-24">
     <Motion
       as="section"
       class="flex flex-col gap-3"
@@ -20,7 +18,8 @@
       <p
         class="font-inter text-base text-white/50 max-w-2xl leading-relaxed mt-2"
       >
-        Leave your message, feedback, or just say hi! I appreciate every single note:)
+        Leave your message, feedback, or just say hi! I appreciate every single
+        note:)
       </p>
     </Motion>
 
@@ -38,7 +37,9 @@
       </div>
 
       <div v-if="user" class="post-menu mb-6">
-        <div class="post-head mb-6 flex flex-wrap items-start justify-between gap-4">
+        <div
+          class="post-head mb-6 flex flex-wrap items-start justify-between gap-4"
+        >
           <div class="post-identity flex min-w-0 items-center gap-3">
             <UAvatar
               :src="currentUserAvatar || undefined"
@@ -48,7 +49,11 @@
             />
             <div class="min-w-0">
               <p class="truncate text-xl font-semibold text-white">
-                {{ user.user_metadata?.full_name || user.user_metadata?.name || user.email }}
+                {{
+                  user.user_metadata?.full_name ||
+                  user.user_metadata?.name ||
+                  user.email
+                }}
               </p>
               <p class="text-base text-white/55">Signed in</p>
             </div>
@@ -68,7 +73,9 @@
           </div>
         </div>
 
-        <h3 class="mb-4 font-pjs text-lg md:text-xl font-semibold text-white">Leave a Message</h3>
+        <h3 class="mb-4 font-pjs text-lg md:text-xl font-semibold text-white">
+          Leave a Message
+        </h3>
 
         <div class="composer-shell">
           <UTextarea
@@ -528,8 +535,9 @@ const getInitials = (name: string) =>
     .join('') || 'U';
 
 const runtimeConfig = useRuntimeConfig();
-const siteUrl = (runtimeConfig.public.siteUrl || 'https://bintangmurtifandy.id')
-  .replace(/\/$/, '');
+const siteUrl = (
+  runtimeConfig.public.siteUrl || 'https://bintangmurtifandy.id'
+).replace(/\/$/, '');
 const guestbookUrl = `${siteUrl}/guestbook`;
 
 useSeoMeta({

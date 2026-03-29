@@ -102,15 +102,23 @@ const contentY = useElementParallax(sectionRef, {
 
 const experiences: ExperienceItem[] = [
   {
+    period: '2025 - Present',
+    title: 'Network Operations Center',
+    company: 'NOC Stembayo',
+    description: 'Managing and maintaining the network infrastructure.',
+    skills: ['System Administrator', 'Network Engineering'],
+    current: true,
+  },
+  {
     period: '2024 - Present',
-    title: 'Student Developer',
+    title: 'Informatic Student',
     company: 'SMKN 2 Depok Sleman',
     description: 'Studying Sistem Informasi Jaringan dan Aplikasi (SIJA).',
     skills: [
-      'System Administrator',
       'Web Development',
-      'Network Engineering',
+      'Basic Networking',
       'Cloud Computing',
+      'Internet of Things',
     ],
     current: true,
   },

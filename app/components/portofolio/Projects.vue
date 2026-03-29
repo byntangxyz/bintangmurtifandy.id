@@ -99,8 +99,6 @@
                 />
               </div>
             </div>
-
-            <!-- Card content -->
             <div class="flex flex-col gap-3 p-5 flex-1">
               <div class="flex items-start gap-2.5">
                 <div
@@ -172,7 +170,7 @@ const projects: PortfolioProjectItem[] = [
     tags: ['Nuxt', 'TailwindCSS', 'motion-v'],
     icon: 'i-lucide-panel-top',
     category: 'Web',
-    link: '',
+    link: 'https://github.com/byntangxyz/portfolio-v6',
     image: '/projects/porto.webp',
   },
   {
@@ -182,7 +180,7 @@ const projects: PortfolioProjectItem[] = [
     tags: ['JavaScript', 'Nodejs', 'React'],
     icon: 'i-lucide-layout-panel-top',
     category: 'Web',
-    link: '',
+    link: 'https://github.com/byntangxyz/fullstack-js-with-auth',
     image: '/projects/mern-auth.webp',
   },
   {
@@ -201,7 +199,7 @@ const projects: PortfolioProjectItem[] = [
     tags: ['NextJS', 'TailwindCSS', 'Framer Motion'],
     icon: 'i-lucide-panel-top',
     category: 'Web',
-    link: '',
+    link: 'https://github.com/byntangxyz/sijaarc-class',
     image: '/projects/sijaarcv2.webp',
   },
   {
@@ -211,7 +209,7 @@ const projects: PortfolioProjectItem[] = [
     tags: ['React', 'Animation', '3D'],
     icon: 'i-lucide-panel-top',
     category: 'Web',
-    link: '',
+    link: 'https://github.com/byntangxyz/hololive-id-gen3',
     image: '/projects/holog3.webp',
   },
 ];
